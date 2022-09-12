@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import ResidentInfo from "./ResidentInfo";
+import LiveSearch from "./LiveSearch";
+import header from "../assets/header.jpg";
 import headerGradient from "../assets/headerGradient.png";
 import Pagination from "./Pagination";
 

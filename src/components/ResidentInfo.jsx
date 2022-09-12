@@ -54,7 +54,7 @@ const ResidentInfo = ({ url }) => {
             </div>
           </>
         ) : (
-          <div className="characterBack">
+          <div className="characterBack animate__animated animate__flipInY">
             <i
               onClick={() => setIsCardFront(true)}
               className="fa-solid fa-xmark"
@@ -63,30 +63,18 @@ const ResidentInfo = ({ url }) => {
             <h2>{characters.name}</h2>
             <div className="characterGrid">
               <p className="characterInfo">
-                <b>
-                  ORIGIN <br />
-                  <br />
-                  <br />{" "}
-                </b>
-                {characters.origin?.name}
+                <b>ORIGIN</b>
+                <span>{characters.origin?.name}</span>
               </p>
               <div className="lineBack"></div>
               <p className="characterInfo">
-                <b>
-                  SPECIES <br />
-                  <br />
-                  <br />{" "}
-                </b>
-                {characters.species}
+                <b>SPECIES</b>
+                <span>{characters.species}</span>
               </p>
               <div className="lineBack"></div>
               <p className="characterInfo">
-                <b>
-                  EPISODES <br />
-                  <br />
-                  <br />{" "}
-                </b>
-                {characters.episode?.length}
+                <b>EPISODES</b>
+                <span>{characters.episode?.length}</span>
               </p>
             </div>
           </div>
